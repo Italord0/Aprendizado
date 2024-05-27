@@ -37,12 +37,12 @@ class CarroAdapter(
 
 
        // imageView.setImageResource(carro.image)
-        tvNome.text = carro.nome
-        tvAno.text = carro.year
-        tvCor.text = carro.color
+        tvNome.text = carro.modelo
+        tvAno.text = carro.ano
+        tvCor.text = carro.cor
         tvPreco.text = carro.preco.toString()
 
-        when(carro.color){
+        when(carro.cor){
             "Vermelho" -> ivCircle.setColorFilter(Color.RED)
             "Prata" -> ivCircle.setColorFilter(Color.GRAY)
             "Branco" -> ivCircle.setColorFilter(Color.BLUE)
@@ -66,7 +66,7 @@ class CarroAdapter(
         lista.remove(carro)
            notifyDataSetChanged()
         }
-        Picasso.get().load(carro.image).into(imageView)
+        Picasso.get().load(carro.imagem).into(imageView)
 
 
         return itemView

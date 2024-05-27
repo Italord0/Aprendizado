@@ -1,12 +1,13 @@
 package com.globo.aprendizado.model
 
 data class Carro(
-    val nome: String,
-    val image: String,
-    val year: String,
-    val color: String,
-    val preco: Double,
-    val marca: String
+    val id: Int,
+    val marca: String,
+    val modelo: String,
+    val cor: String,
+    val ano: String,
+    val imagem: String,
+    val preco: Double
 )
 
 
